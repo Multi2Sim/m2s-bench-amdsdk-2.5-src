@@ -178,10 +178,7 @@ M2S_INCLUDE = $(M2S_ROOT)/runtime/include
 M2S_DEVICE = "Tahiti"
 
 CFLAGS = "-I../include -I. -I../common -I$(M2S_INCLUDE) -g"
-LDFLAGS = "-L$(M2S_LIB) -lm2s-opencl -lpthread -ldl -lrt -static"
-
-NATIVE_CFLAGS = "-Wall -I$(AMDAPPSDKROOT)/include -I../include -I. -g"
-NATIVE_LDFLAGS = "-L$(AMDAPPSDKROOT)/lib/x86 -lOpenCL"
+LDFLAGS = "-L$(M2S_LIB) -lm2s-opencl -lpthread -ldl -lrt -static -m32"
 
 M2C = "$(M2S_BIN)/m2c --amd"
 
@@ -210,8 +207,6 @@ premake:
 			M2S_DEVICE=$(M2S_DEVICE) \
 			CFLAGS=$(CFLAGS) \
 			LDFLAGS=$(LDFLAGS) \
-			NATIVE_CFLAGS=$(NATIVE_CFLAGS) \
-			NATIVE_LDFLAGS=$(NATIVE_LDFLAGS) \
 			M2C=$(M2C) \
 			|| exit 1; \
 	done

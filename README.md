@@ -6,41 +6,41 @@
 
 | Benchmark            | Disassembly   | Emulation     |
 |----------------------|---------------|---------------|
-| AESEncryptDecrypt    | supported     | not supported |
-| BinarySearch         | supported     | not supported |
-| BinomialOption       | supported     | not supported |
+| AESEncryptDecrypt    | not supported | not supported |
+| BinarySearch         | supported     | supported     |
+| BinomialOption       | supported     | supported     |
 | BitonicSort          | supported     | not supported |
 | BlackScholes         | supported     | not supported |
 | BoxFilter            | not supported | not supported |
 | BoxFilterGL          | not supported | not supported |
-| DCT                  | supported     | not supported |
-| DeviceFission        | not supported | not supported |
-| DwtHaar1D            | supported     | not supported |
+| DCT                  | supported     | supported     |
+| DeviceFission        | supported     | not supported |
+| DwtHaar1D            | supported     | supported     |
 | EigenValue           | supported     | not supported |
-| FFT                  | supported     | not supported |
+| FFT                  | supported     | supported     |
 | FastWalshTransform   | supported     | not supported |
 | FloydWarshall        | supported     | not supported |
 | FluidSimulation2D    | not supported | not supported |
-| Histogram            | supported     | not supported |
+| Histogram            | supported     | supported     |
 | HistogramAtomics     | not supported | not supported |
 | Mandelbrot           | not supported | not supported |
-| MatrixMulImage       | not supported | not supported |
-| MatrixMultiplication | supported     | not supported |
-| MatrixTranspose      | supported     | not supported |
+| MatrixMulImage       | supported     | not supported |
+| MatrixMultiplication | supported     | supported     |
+| MatrixTranspose      | supported     | supported     |
 | MemoryOptimizations  | not supported | not supported |
 | MersenneTwister      | supported     | not supported |
-| MonteCarloAsian      | not supported | not supported |
-| MonteCarloAsianDP    | not supported | not supported |
+| MonteCarloAsian      | supported     | not supported |
+| MonteCarloAsianDP    | supported     | not supported |
 | NBody                | not supported | not supported |
 | PrefixSum            | supported     | not supported |
 | QuasiRandomSequence  | supported     | not supported |
 | RadixSort            | supported     | not supported |
 | RecursiveGaussian    | supported     | not supported |
-| Reduction            | supported     | not supported |
+| Reduction            | supported     | supported     |
 | ScanLargeArrays      | supported     | not supported |
-| SimpleConvolution    | supported     | not supported |
-| SimpleImage          | not supported | not supported |
-| SobelFilter          | supported     | not supported |
-| URNG                 | supported     | not supported |
+| SimpleConvolution    | supported     | supported     |
+| SimpleImage          | not supported | supported     |
+| SobelFilter          | supported     | supported     |
+| URNG                 | supported     | supported     |
 
 

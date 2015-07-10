@@ -9,6 +9,7 @@
 #include <ctime>
 #include <cmath>
 #include <time.h>
+#include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
 #include <vector>
