@@ -9,8 +9,8 @@
 | AESEncryptDecrypt    | not supported | not supported |
 | BinarySearch         | supported     | supported     |
 | BinomialOption       | supported     | supported     |
-| BitonicSort          | supported     | not supported |
-| BlackScholes         | supported     | not supported |
+| BitonicSort          | supported     | supported     |
+| BlackScholes         | supported     | supported     |
 | BoxFilter            | not supported | not supported |
 | BoxFilterGL          | not supported | not supported |
 | DCT                  | supported     | supported     |
@@ -18,7 +18,7 @@
 | DwtHaar1D            | supported     | supported     |
 | EigenValue           | supported     | not supported |
 | FFT                  | supported     | supported     |
-| FastWalshTransform   | supported     | not supported |
+| FastWalshTransform   | supported     | supported     |
 | FloydWarshall        | supported     | not supported |
 | FluidSimulation2D    | not supported | not supported |
 | Histogram            | supported     | supported     |
@@ -34,10 +34,10 @@
 | NBody                | not supported | not supported |
 | PrefixSum            | supported     | not supported |
 | QuasiRandomSequence  | supported     | not supported |
-| RadixSort            | supported     | not supported |
+| RadixSort            | supported     | supported     |
 | RecursiveGaussian    | supported     | not supported |
 | Reduction            | supported     | supported     |
-| ScanLargeArrays      | supported     | not supported |
+| ScanLargeArrays      | supported     | supported     |
 | SimpleConvolution    | supported     | supported     |
 | SimpleImage          | not supported | supported     |
 | SobelFilter          | supported     | supported     |
