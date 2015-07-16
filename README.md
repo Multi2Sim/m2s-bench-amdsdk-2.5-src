@@ -32,10 +32,10 @@ Each of the benchmarks provides several command line options which can be explor
 | DCT                  | supported     | supported     |
 | DeviceFission        | supported     | not supported |
 | DwtHaar1D            | supported     | supported     |
-| EigenValue           | supported     | not supported |
+| EigenValue           | supported     | supported     |
 | FFT                  | supported     | supported     |
 | FastWalshTransform   | supported     | supported     |
-| FloydWarshall        | supported     | not supported |
+| FloydWarshall        | supported     | supported     |
 | FluidSimulation2D    | not supported | not supported |
 | Histogram            | supported     | supported     |
 | HistogramAtomics     | not supported | not supported |
@@ -51,7 +51,7 @@ Each of the benchmarks provides several command line options which can be explor
 | PrefixSum            | supported     | supported     |
 | QuasiRandomSequence  | supported     | supported     |
 | RadixSort            | supported     | supported     |
-| RecursiveGaussian    | supported     | not supported |
+| RecursiveGaussian    | supported     | supported     |
 | Reduction            | supported     | supported     |
 | ScanLargeArrays      | supported     | supported     |
 | SimpleConvolution    | supported     | supported     |
