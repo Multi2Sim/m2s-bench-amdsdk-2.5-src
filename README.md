@@ -44,7 +44,7 @@ Each of the benchmarks provides several command line options which can be explor
 | MatrixMultiplication | supported     | supported     |
 | MatrixTranspose      | supported     | supported     |
 | MemoryOptimizations  | not supported | not supported |
-| MersenneTwister      | supported     | not supported |
+| MersenneTwister      | supported     | supported     |
 | MonteCarloAsian      | supported     | not supported |
 | MonteCarloAsianDP    | supported     | not supported |
 | NBody                | not supported | not supported |

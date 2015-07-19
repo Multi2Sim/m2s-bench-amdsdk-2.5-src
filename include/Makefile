@@ -2,7 +2,7 @@ CC = g++
 
 M2S_LIBOPENCL = $(M2S_LIB)/libm2s-opencl.so
 
-BENCHMARK_NAME = BoxFilterGL
+BENCHMARK_NAME = include
 BENCHMARKS_ROOT = ..
 
 PROGRAM_BINARY_DYNAMIC = $(BENCHMARK_NAME)_dynamic
