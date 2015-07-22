@@ -2,7 +2,9 @@
 
 ##Build Instructions
 
-All of the benchmark host programs can be built by running the `make` command from the top level directory. The GPU binaries for each benchmark are all provided pre-compiled. The provided Makefile assumes that Multi2Sim source has been downloaded onto the home folder of the user's system in a folder called 'multi2sim'. Furthermore, the user copy of Multi2Sim should have been configured and built according to the instructions provided at https://www.multi2sim.org/development/multi2sim.php. The building of the benchmarks was tested on a system running Ubuntu 14.04 and GCC 4.8.4
+All of the benchmark host programs can be built by running the `make` command from the top level directory. This will create both a static and dynamically linked version of the host program. The GPU binaries for each benchmark are all provided pre-compiled. The provided Makefile assumes that Multi2Sim source has been downloaded onto the home folder of the user's system in a folder called 'multi2sim'. Furthermore, the user copy of Multi2Sim should have been configured and built according to the instructions provided at https://www.multi2sim.org/development/multi2sim.php. The building of the benchmarks was tested on a system running Ubuntu 14.04, Linux kernel 3.13.0-32-generic, and GCC 4.8.4
+
+In addition, the user can create a tarball of the statically linked host programs and GPU kernel binaries by running `make dist`.
 
 Note: BoxFilterGL, Mandelbrot, and NBody will not be built due to the OpenGL requirements of the benchmarks.
 
@@ -18,45 +20,45 @@ For example, running the BinarySearch benchmark would be done in the following m
 
 Each of the benchmarks provides several command line options which can be explored via the `--help` option such as a verification option which will run the GPU binary as well as a CPU only implementation of the benchmark to compare the GPU results against.
 
-##Disassembly and Emulation Support
+##Support on Multi2Sim
 
 | Benchmark            | Disassembly   | Emulation     |
 |----------------------|---------------|---------------|
-| AESEncryptDecrypt    | not supported | not supported |
-| BinarySearch         | supported     | supported     |
-| BinomialOption       | supported     | supported     |
-| BitonicSort          | supported     | supported     |
-| BlackScholes         | supported     | supported     |
-| BoxFilter            | not supported | not supported |
-| BoxFilterGL          | not supported | not supported |
-| DCT                  | supported     | supported     |
-| DeviceFission        | supported     | not supported |
-| DwtHaar1D            | supported     | supported     |
-| EigenValue           | supported     | supported     |
-| FFT                  | supported     | supported     |
-| FastWalshTransform   | supported     | supported     |
-| FloydWarshall        | supported     | supported     |
-| FluidSimulation2D    | not supported | not supported |
-| Histogram            | supported     | supported     |
-| HistogramAtomics     | not supported | not supported |
-| Mandelbrot           | not supported | not supported |
-| MatrixMulImage       | supported     | not supported |
-| MatrixMultiplication | supported     | supported     |
-| MatrixTranspose      | supported     | supported     |
-| MemoryOptimizations  | not supported | not supported |
-| MersenneTwister      | supported     | supported     |
-| MonteCarloAsian      | supported     | not supported |
-| MonteCarloAsianDP    | supported     | not supported |
-| NBody                | not supported | not supported |
-| PrefixSum            | supported     | supported     |
-| QuasiRandomSequence  | supported     | supported     |
-| RadixSort            | supported     | supported     |
-| RecursiveGaussian    | supported     | supported     |
-| Reduction            | supported     | supported     |
-| ScanLargeArrays      | supported     | supported     |
-| SimpleConvolution    | supported     | supported     |
-| SimpleImage          | not supported | supported     |
-| SobelFilter          | supported     | supported     |
-| URNG                 | supported     | supported     |
+| AESEncryptDecrypt    | No            | No            |
+| BinarySearch         | Yes           | Yes           |
+| BinomialOption       | Yes           | Yes           |
+| BitonicSort          | Yes           | Yes           |
+| BlackScholes         | Yes           | Yes           |
+| BoxFilter            | No            | No            |
+| BoxFilterGL          | No            | No            |
+| DCT                  | Yes           | Yes           |
+| DeviceFission        | Yes           | No            |
+| DwtHaar1D            | Yes           | Yes           |
+| EigenValue           | Yes           | Yes           |
+| FFT                  | Yes           | Yes           |
+| FastWalshTransform   | Yes           | Yes           |
+| FloydWarshall        | Yes           | Yes           |
+| FluidSimulation2D    | No            | No            |
+| Histogram            | Yes           | Yes           |
+| HistogramAtomics     | No            | No            |
+| Mandelbrot           | No            | No            |
+| MatrixMulImage       | Yes           | No            |
+| MatrixMultiplication | Yes           | Yes           |
+| MatrixTranspose      | Yes           | Yes           |
+| MemoryOptimizations  | No            | No            |
+| MersenneTwister      | Yes           | Yes           |
+| MonteCarloAsian      | Yes           | No            |
+| MonteCarloAsianDP    | Yes           | No            |
+| NBody                | No            | No            |
+| PrefixSum            | Yes           | Yes           |
+| QuasiRandomSequence  | Yes           | Yes           |
+| RadixSort            | Yes           | Yes           |
+| RecursiveGaussian    | Yes           | Yes           |
+| Reduction            | Yes           | Yes           |
+| ScanLargeArrays      | Yes           | Yes           |
+| SimpleConvolution    | Yes           | Yes           |
+| SimpleImage          | No            | Yes           |
+| SobelFilter          | Yes           | Yes           |
+| URNG                 | Yes           | Yes           |
 
 
