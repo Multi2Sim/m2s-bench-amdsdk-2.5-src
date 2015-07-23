@@ -1,6 +1,6 @@
 # Host programs
-	*_static
-	*_dynamic
+*_static
+*_dynamic
 
 # Tarball
-	*.tar.gz
+*.tar.gz
